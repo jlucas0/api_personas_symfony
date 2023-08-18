@@ -1,0 +1,44 @@
+direcciones_crear:
+    path: /direcciones/crear
+    controller: App\Controller\DireccionController::crear
+    methods: POST
+direcciones_modificar:
+    path: /direcciones/modificar/{id}
+    controller: App\Controller\DireccionController::modificar
+    methods: PUT
+direcciones_borrar:
+    path: /direcciones/borrar/{id}
+    controller: App\Controller\DireccionController::borrar
+    methods: DELETE
+direcciones_ver:
+    path: /direcciones/{id}
+    controller: App\Controller\DireccionController::ver
+    methods: GET
+direcciones_lista:
+    path: /direcciones/cp/{cp}
+    controller: App\Controller\DireccionController::listar
+    methods: GET
+personas_crear:
+    path: /personas/crear
+    controller: App\Controller\PersonaController::crear
+    methods: POST
+personas_modificar:
+    path: /personas/modificar/{id}
+    controller: App\Controller\PersonaController::modificar
+    methods: PUT
+personas_defenestrar:
+    path: /personas/fallece/{id}
+    controller: App\Controller\PersonaController::defenestrar
+    methods: PUT
+personas_ver:
+    path: /personas/{dato}
+    controller: App\Controller\PersonaController::ver
+    methods: GET
+personas_direccion:
+    path: /personas/direccion/{direccion}
+    controller: App\Controller\PersonaController::adscritos
+    methods: GET
+personas_lista:
+    path: /personas
+    controller: App\Controller\PersonaController::listar
+    methods: GET
